@@ -1,0 +1,32 @@
+Time to make things.
+
+Step 1 is making sure object-oriented approach works. Current plan as of Monday
+is to create a primitive SurfaceRect class to build off of for simple objects.
+My grand goal is to make a spaceship for my final project in which an FPS
+takes place, so I'm keeping that in mind with my object design.
+
+Objects will have the following:
+List of sub-objects that make it up (mostly SurfaceRects)
+Unique geometry, specified as array data
+
+Objects will:
+On draw() call, draw all sub-objects, then draw unique geometry.
+
+My hope is that with this system I can build my way up to complex objects
+with simpler things.
+
+Update: Things have changed slightly. Here's the new stuff:
+All drawable objects inherit from TObject (Transform Object). The inheritance
+controls size, rotation, and position, and objects are drawn in +x,+y,-z space.
+They have one corner at the origin, which is the corner that will be at
+transform values.
+
+Individual object classes specify their vertex data, contained within a 1x1x1
+box (at least for primitive ones like cube/pyramid, constructed ones maybe
+not)
+
+
+TO DO:
+The back wall is bugged and not displaying color properly.
+Setup a camera class to help with projections.
+FPS tracking
