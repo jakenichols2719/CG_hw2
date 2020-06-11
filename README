@@ -1,0 +1,19 @@
+Homework 2: Objects
+James Nichols
+
+Goal: I've always done object-oriented programming, so I want to implement
+that approach with OpenGL to create a very basic scene. I will include more of
+my thoughts throughout development in notes.txt so as to not clog up the README.
+
+Controls:
+0: Reset scene
+1, 2, 3: Switch camera view
+1: First-person perspective
+2: Overhead perspective
+3: Overhead orthogonal
+4: Toggle mouse control (disabled by default)
+
+W, A, S, D: Move camera
+Mouse: Rotate camera
+Shift (Modes 2/3): Descend camera
+Space (Modes 2/3): Ascend camera
