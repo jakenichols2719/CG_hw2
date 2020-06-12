@@ -39,6 +39,8 @@ void SurfaceOct::draw()
   }
   glDrawElements(GL_TRIANGLE_FAN,10,GL_UNSIGNED_BYTE,indices);
   glPopMatrix();
+  glDisableClientState(GL_VERTEX_ARRAY);
+  glDisableClientState(GL_COLOR_ARRAY);
 }
 
 //===TERRAIN OBJECTS===
