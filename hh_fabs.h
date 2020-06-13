@@ -26,6 +26,26 @@ public:
   void draw();
 };
 
+class ControlPanel : public TObject
+{
+  using TObject::TObject;
+private:
+  Cuboid base = Cuboid(0,0,0, 1.8,1,.5, -.9,0,.25, 1,0,.4);
+  Cuboid panel = Cuboid(200,0,0, 2,.2,1.8, -1,1.4,-.75, 1,.4,0);
+public:
+  void draw();
+};
+
+class Sconce : public TObject
+{
+  using TObject::TObject;
+private:
+  Pyramid sconce = Pyramid(180,0,0, 1,1,1, -.5,0,-.5, .3,.3,.3);
+  Sphere bulb = Sphere(0,0,0, .7,.7,.7, -.5,-.4,.5, 0,1,1);
+public:
+  void draw();
+};
+
 class SurfaceOct : public TObject
 {
   using TObject::TObject;

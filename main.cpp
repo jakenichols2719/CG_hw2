@@ -24,10 +24,27 @@
 #define Sin(x) (sin((x)*3.1415927/180))
 
 
-OctRoom s (0,0,0, 3,2,3, 0,0,0);
-Reactor c (0,0,0, 2,2,2, 0,0,0);
+OctRoom room (0,0,0, 3,2,3, 0,0,0);
+Reactor react (0,0,0, 2,2,2, 0,0,0);
+ControlPanel c1 (0,0,0, 2,1,1, -3,0,-13);
+ControlPanel c2 (0,0,0, 1,1,1, 1.5,0,-13);
+ControlPanel c3 (0,0,0, 1,1,1, 3.6,0,-13);
+Sconce s1 (0,0,0, 1.2,1.2,1.2, 0,7,-15);
+Sconce s2 (0,0,0, 1.2,1.2,1.2, -15,7,0);
+Sconce s3 (0,0,0, 1.2,1.2,1.2, 15,7,0);
 int th = 0;
 int ph = 0;
+
+void drawObjects() {
+  room.draw();
+  react.draw();
+  c1.draw();
+  c2.draw();
+  c3.draw();
+  s1.draw();
+  s2.draw();
+  s3.draw();
+}
 
 //todo: linked list for objects
 void display() {
@@ -37,8 +54,7 @@ void display() {
   glRotated(ph,1,0,0);
   glRotated(th,0,1,0);
   glPushMatrix();
-  s.draw();
-  c.draw();
+  drawObjects();
   glPopMatrix();
   /*
   glBegin(GL_LINE_LOOP);

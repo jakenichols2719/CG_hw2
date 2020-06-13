@@ -24,6 +24,24 @@ void Reactor::draw()
   glPopMatrix();
 }
 
+void ControlPanel::draw()
+{
+  glPushMatrix();
+  transform();
+  base.draw();
+  panel.draw();
+  glPopMatrix();
+}
+
+void Sconce::draw()
+{
+  glPushMatrix();
+  transform();
+  sconce.draw();
+  bulb.draw();
+  glPopMatrix();
+}
+
 void SurfaceOct::draw()
 {
   glPushMatrix();
