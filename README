@@ -11,9 +11,8 @@ Controls:
 1: First-person perspective
 2: Overhead perspective
 3: Overhead orthogonal
-4: Toggle mouse control (disabled by default)
 
-W, A, S, D: Move camera
-Mouse: Rotate camera
-Shift (Modes 2/3): Descend camera
-Space (Modes 2/3): Ascend camera
+W, A, S, D (Mode 1): Move camera
+Arrow Keys (All Modes): Rotate camera
+
+Total Time: 20-25 hrs

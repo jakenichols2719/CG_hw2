@@ -74,6 +74,7 @@ void OctRoom::draw()
   wall2.draw();
   wall3.draw();
   wall4.draw(); //door
+  door.draw();
   wall5.draw();
   wall6.draw();
   wall7.draw();

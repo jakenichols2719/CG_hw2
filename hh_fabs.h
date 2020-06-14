@@ -68,14 +68,15 @@ private:
   SurfaceOct bot = SurfaceOct(0,0,0, 10,10,10, -5,0,5); //floor, but that's reserved
   SurfaceOct top = SurfaceOct(180,0,0, 10,10,10, -5,7,-5); //ceiling but now this is a naming convention I guess
   //walls, starting at far end (from 0 0 +z view) and rotating CCW
-  SurfaceRect wall0 = SurfaceRect(90,0,0,     4.8,1,10,   -2.4,0,-5, .9,.9,.9);
-  SurfaceRect wall1 = SurfaceRect(45,90,-90,  3.677,1,10, -5,0,-2.4, .8,.8,.8);
-  SurfaceRect wall2 = SurfaceRect(0,90,-90,   4.8,1,10,   -5,0,2.4,  .9,.9,.9);
-  SurfaceRect wall3 = SurfaceRect(-45,90,-90, 3.677,1,10, -2.4,0,5,  .8,.8,.8);
-  SurfaceRect wall4 = SurfaceRect(-90,180,0,  4.8,1,6,     2.4,4,5,  .9,.9,.9); //door
-  SurfaceRect wall5 = SurfaceRect(-45,-90,90, 3.677,1,10,  5,0,2.4,  .8,.8,.8);
-  SurfaceRect wall6 = SurfaceRect(0,-90,90,   4.8,1,10,    5,0,-2.4, .9,.9,.9);
-  SurfaceRect wall7 = SurfaceRect(45,-90,90,  3.677,1,10,  2.4,0,-5, .8,.8,.8);
+  SurfaceRect wall0 = SurfaceRect(90,0,0,     4.8,1,7,   -2.4,0,-5, .9,.9,.9);
+  SurfaceRect wall1 = SurfaceRect(45,90,-90,  3.677,1,7, -5,0,-2.4, .8,.8,.8);
+  SurfaceRect wall2 = SurfaceRect(0,90,-90,   4.8,1,7,   -5,0,2.4,  .9,.9,.9);
+  SurfaceRect wall3 = SurfaceRect(-45,90,-90, 3.677,1,7, -2.4,0,5,  .8,.8,.8);
+  SurfaceRect wall4 = SurfaceRect(-90,180,0,  4.8,1,3,    2.4,4,5,  .9,.9,.9); //door
+  SurfaceRect door =  SurfaceRect(-90,180,0,  4.8,1,4,    2.4,0,5,  .2,.2,.6);
+  SurfaceRect wall5 = SurfaceRect(-45,-90,90, 3.677,1,7,  5,0,2.4,  .8,.8,.8);
+  SurfaceRect wall6 = SurfaceRect(0,-90,90,   4.8,1,7,    5,0,-2.4, .9,.9,.9);
+  SurfaceRect wall7 = SurfaceRect(45,-90,90,  3.677,1,7,  2.4,0,-5, .8,.8,.8);
 public:
   void draw();
 };
