@@ -25,8 +25,11 @@ Individual object classes specify their vertex data, contained within a 1x1x1
 box (at least for primitive ones like cube/pyramid, constructed ones maybe
 not)
 
+Okay, the scene is done. Just projections left to do now. I generally like the
+system I have set up but I'm going to change a few things for the next
+assignment.
 
-TO DO:
-The back wall is bugged and not displaying color properly.
-Setup a camera class to help with projections.
-FPS tracking
+-ALL objects centered on 0,0,0
+-More standardized draw behavior
+-Normal vectors added for lighting
+-Do some thinking about order of rotation
